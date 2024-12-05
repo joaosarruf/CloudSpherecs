@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Metadados essenciais -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cswebsolutions - Construção de Sites e Hospedagem em Nuvem</title>
+
+  <!-- Link para o CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Fonte do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Biblioteca de animação AOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css">
+
+  <!-- Ícones do Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://via.placeholder.com/32" type="image/png">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="https://via.placeholder.com/150x50?text=LOGO" alt="Logo da Empresa">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção de Introdução -->
+  <section id="inicio">
+    <div class="overlay"></div>
+    <div class="intro-content" data-aos="fade-up">
+      <h1>Bem-vindo à <span>cswebsolutions</span></h1>
+      <p>Construímos sites modernos e oferecemos hospedagem em nuvem de alta performance.</p>
+      <a href="#contato" class="btn">Solicite um Orçamento</a>
+    </div>
+  </section>
+
+  <!-- Sobre a Empresa -->
+  <section id="sobre">
+    <div class="container">
+      <div class="section-title" data-aos="fade-right">
+        <h2>Sobre Nós</h2>
+        <p>Conheça mais sobre nossa empresa</p>
+      </div>
+      <div class="about-content" data-aos="fade-up">
+        <p>Somos uma empresa especializada em desenvolvimento de sites e soluções de hospedagem em nuvem. Nossa missão é ajudar negócios a se destacarem no mundo digital através de plataformas eficientes e designs atraentes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos">
+    <div class="container">
+      <div class="section-title" data-aos="fade-right">
+        <h2>Nossos Serviços</h2>
+        <p>O que oferecemos</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-item" data-aos="zoom-in">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Desenvolvimento Web</h3>
+          <p>Criamos sites responsivos e personalizados para o seu negócio.</p>
+        </div>
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fas fa-cloud"></i>
+          <h3>Hospedagem em Nuvem</h3>
+          <p>Serviços de hospedagem seguros e escaláveis na nuvem.</p>
+        </div>
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Design Responsivo</h3>
+          <p>Seu site acessível em qualquer dispositivo com design adaptativo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulário de Contato -->
+  <section id="contato">
+    <div class="container">
+      <div class="section-title" data-aos="fade-right">
+        <h2>Entre em Contato</h2>
+        <p>Solicite um orçamento ou tire suas dúvidas</p>
+      </div>
+      <div class="contact-form" data-aos="fade-up">
+        <form action="processar_formulario.php" method="post">
+            <div class="form-group">
+                <input type="text" name="nome" placeholder="Nome" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="E-mail" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="telefone" placeholder="Telefone" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="empresa" placeholder="Nome da Empresa ou Negócio" required>
+            </div>
+            <div class="form-group">
+                <textarea name="objetivo" placeholder="Objetivo Principal do Site (ex.: divulgação de produtos, vendas online, etc.)" required></textarea>
+            </div>
+            <div class="form-group">
+                <textarea name="proposta_valor" placeholder="Proposta de Valor da Marca (ex.: missão do negócio, como quer ser percebido pelo cliente)" required></textarea>
+            </div>
+            <div class="form-group">
+                <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
+    </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2023 cswebsolutions. Todos os direitos reservados.</p>
+        <div class="social-media">
+          <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Biblioteca de animação AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+  <!-- Script personalizado -->
+  <script src="script.js"></script>
+</body>
+</html>

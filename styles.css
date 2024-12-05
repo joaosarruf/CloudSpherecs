@@ -1,0 +1,266 @@
+/* Fonte padrão */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Links */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid #eee;
+  }
+  
+  header .logo img {
+    width: 150px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  header nav ul li {
+    margin-left: 30px;
+  }
+  
+  header nav ul li a {
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #ff6600;
+  }
+  
+  /* Seção de Introdução */
+  #inicio {
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #inicio .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  #inicio .intro-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  #inicio h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  #inicio h1 span {
+    color: #ff6600;
+  }
+  
+  #inicio p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  #inicio .btn {
+    padding: 15px 30px;
+    background: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  #inicio .btn:hover {
+    background: #e05500;
+  }
+  
+  /* Seções */
+  section {
+    padding: 80px 0;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .section-title h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: #ff6600;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+  }
+  
+  .section-title p {
+    color: #777;
+    margin-bottom: 40px;
+  }
+  
+  /* Sobre Nós */
+  #sobre .about-content {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Serviços */
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .service-item {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .service-item i {
+    font-size: 48px;
+    color: #ff6600;
+    margin-bottom: 20px;
+  }
+  
+  .service-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .service-item p {
+    color: #555;
+  }
+  
+  /* Formulário de Contato */
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    height: 150px;
+  }
+  
+  .contact-form .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .contact-form .btn:hover {
+    background: #e05500;
+  }
+  
+  /* Rodapé */
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer .footer-content p {
+    margin-bottom: 15px;
+  }
+  
+  footer .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  footer .social-media a:hover {
+    color: #ff6600;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    header .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      width: 100%;
+      display: none;
+    }
+  
+    header nav ul li {
+      margin: 10px 0;
+    }
+  
+    header nav.active ul {
+      display: flex;
+    }
+  
+    .services-grid {
+      flex-direction: column;
+    }
+  }
+  
