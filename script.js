@@ -1,4 +1,4 @@
-// Menu responsivo (opcional)
+// Menu responsivo
 const nav = document.querySelector('header nav');
 const toggle = document.createElement('div');
 toggle.classList.add('nav-toggle');
