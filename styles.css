@@ -380,3 +380,73 @@ nav.active ul {
     display: none;
   }
 }
+
+/* Título da seção */
+.form-group-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Grupo de checkboxes estilizados */
+.custom-checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+/* Estilo moderno para os checkboxes */
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-checkbox:hover {
+  background: #e8f0ff;
+  border-color: #007bff;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none; /* Oculta o checkbox padrão */
+}
+
+.custom-checkbox span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + span {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + span::before {
+  content: "\2713"; /* Símbolo de marcação */
+  color: #fff;
+  background: #007bff;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .custom-checkbox-group {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+}

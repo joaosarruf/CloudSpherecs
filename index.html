@@ -193,40 +193,103 @@
   </section>
 
   <!-- Formulário de Contato -->
-  <section id="contato">
-    <div class="container">
-      <div class="section-title" data-aos="fade-right">
-        <h2>Entre em Contato</h2>
-        <p>Solicite um orçamento ou tire suas dúvidas</p>
-      </div>
-      <div class="contact-form" data-aos="fade-up">
-        <form action="processar_formulario.php" method="post">
-            <div class="form-group">
-                <input type="text" name="nome" placeholder="Nome" required>
-            </div>
-            <div class="form-group">
-                <input type="email" name="email" placeholder="E-mail" required>
-            </div>
-            <div class="form-group">
-                <input type="tel" name="telefone" placeholder="Telefone" required>
-            </div>
-            <div class="form-group">
-                <input type="text" name="empresa" placeholder="Nome da Empresa ou Negócio" required>
-            </div>
-            <div class="form-group">
-                <textarea name="objetivo" placeholder="Objetivo Principal do Site (ex.: divulgação de produtos, vendas online, etc.)" required></textarea>
-            </div>
-            <div class="form-group">
-                <textarea name="proposta_valor" placeholder="Proposta de Valor da Marca (ex.: missão do negócio, como quer ser percebido pelo cliente)" required></textarea>
-            </div>
-            <div class="form-group">
-                <textarea name="mensagem" placeholder="Mensagem" required></textarea>
-            </div>
-            <button type="submit" class="btn">Enviar Mensagem</button>
-        </form>
+<section id="contato">
+  <div class="container">
+    <div class="section-title" data-aos="fade-right">
+      <h2>Entre em Contato</h2>
+      <p>Solicite um orçamento ou tire suas dúvidas</p>
     </div>
+    <div class="contact-form" data-aos="fade-up">
+      <form action="processar_formulario.php" method="post">
+        <div class="form-group">
+          <input type="text" name="nome" placeholder="Nome" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="E-mail" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" name="telefone" placeholder="Telefone" required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="empresa" placeholder="Nome da Empresa ou Negócio" required>
+        </div>
+        <div class="form-group">
+          <textarea name="objetivo" placeholder="Objetivo Principal do Site (ex.: divulgação de produtos, vendas online, etc.)" required></textarea>
+        </div>
+        <div class="form-group">
+          <textarea name="proposta_valor" placeholder="Proposta de Valor da Marca (ex.: missão do negócio, como quer ser percebido pelo cliente)" required></textarea>
+        </div>
+        <div class="form-group">
+          <textarea name="produtos_servicos" placeholder="Produtos ou Serviços em Destaque (Quais produtos ou serviços precisam de maior ênfase no site?)" required></textarea>
+        </div>
+        <div class="form-group">
+          <textarea name="publico_alvo" placeholder="Público-Alvo (Para quem este site será voltado? ex.: consumidores, empresas, alunos, etc.)" required></textarea>
+        </div>
+        <div class="form-group">
+          <p class="form-group-title">Recursos Essenciais:</p>
+          <div class="custom-checkbox-group">
+            <label class="custom-checkbox">
+              <input type="checkbox" name="recursos_essenciais[]" value="Vendas online (e-commerce)">
+              <span>Vendas online (e-commerce)</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" name="recursos_essenciais[]" value="Agendamento de serviços">
+              <span>Agendamento de serviços</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" name="recursos_essenciais[]" value="Cadastro de usuários/clientes">
+              <span>Cadastro de usuários/clientes</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" name="recursos_essenciais[]" value="Área de login para usuários">
+              <span>Área de login para usuários</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" name="recursos_essenciais[]" value="Fórum ou comunidade">
+              <span>Fórum ou comunidade</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" name="recursos_essenciais[]" value="Listagem e controle de produtos/serviços">
+              <span>Listagem e controle de produtos/serviços</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" name="recursos_essenciais[]" value="Blog/Notícias">
+              <span>Blog/Notícias</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" name="recursos_essenciais[]" value="Chat ou atendimento ao cliente">
+              <span>Chat ou atendimento ao cliente</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" name="recursos_essenciais[]" value="Outra">
+              <span>Outra</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea name="integracoes" placeholder="Integrações Necessárias (ex.: WhatsApp, sistemas de pagamento, sistema de estoque, etc.)" required></textarea>
+        </div>
+        <div class="form-group">
+          <textarea name="meios_pagamento" placeholder="Meios de Pagamento (ex.: cartão de crédito, boleto, Pix, etc.)" required></textarea>
+        </div>
+        <div class="form-group">
+          <textarea name="sites_parecidos" placeholder="Sites Parecidos (Liste exemplos de sites semelhantes ao que deseja, caso tenha)" required></textarea>
+        </div>
+        <div class="form-group">
+          <textarea name="concorrentes" placeholder="Concorrentes (Existem concorrentes com sites que admira ou deseja se diferenciar?)" required></textarea>
+        </div>
+        <div class="form-group">
+          <textarea name="suporte_manutencao" placeholder="Suporte e Manutenção (ex.: Necessidade de Atualizações, Gestão de Conteúdo)" required></textarea>
+        </div>
+        <div class="form-group">
+          <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar Mensagem</button>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Rodapé -->
   <footer>
